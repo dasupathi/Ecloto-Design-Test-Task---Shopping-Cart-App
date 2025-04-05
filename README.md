@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# Shopping Cart Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple React shopping cart application that allows users to add products to a shopping cart, update quantities, and track their progress towards earning a free gift.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Display a list of products.
+- Add products to the cart with a quantity selector.
+- Update product quantities in the cart.
+- Remove products from the cart.
+- Track progress towards a free gift when the cart subtotal reaches a threshold.
+- Automatically add a free gift to the cart when the threshold is reached.
+- Show a progress bar indicating the amount needed to earn the free gift.
 
-### `npm start`
+## Requirements
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Node.js (version 14 or above)
+- npm or yarn
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   git clone https://github.com/your-username/shopping-cart-app.git
+   cd shopping-cart-app
+   ```
 
-### `npm run build`
+2. Install dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Start the development server:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-### `npm run eject`
+4. Open your browser and navigate to `http://localhost:3000` to see the application.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Implementation Details
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Components
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- `ProductList`: Displays a list of products.
+- `ProductItem`: Displays an individual product with a quantity selector and an "Add to Cart" button.
+- `Cart`: Displays the shopping cart with added products.
+- `CartItem`: Displays an individual item in the cart with quantity update and remove buttons.
+- `ProgressBar`: Shows progress towards earning the free gift.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### State Management
 
-## Learn More
+- React's built-in state management (`useState`, `useEffect`) is used to manage the state of the products and the cart.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Free Gift Logic
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- A free gift is automatically added to the cart when the subtotal reaches a predefined threshold.
+- The free gift cannot be manually removed and will be removed if the cart value goes below the threshold.
 
-### Code Splitting
+## Recording
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The entire development process was recorded. You can view the recording on Google Drive using the following link:
 
-### Analyzing the Bundle Size
+[Google Drive Recording Link](https://drive.google.com/your-recording-link)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contact
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For any questions or issues, please contact [your-email@example.com].
